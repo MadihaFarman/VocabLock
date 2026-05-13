@@ -1,1 +1,2 @@
 # VocabLock
+VocabLock is a tool that puts a new vocabulary word on your lock screen every time you open your device. It requires you to check a box saying you've learned the word before it lets you type your password to unlock your phone or laptop.
