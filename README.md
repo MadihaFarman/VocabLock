@@ -4,11 +4,10 @@
 
 ## Project Overview
 
-VocaBlock is a personal vocabulary learning tool I built after spending way too long looking up the same word for the fifth time while reading *Crime and Punishment* by Fyodor Dostoevsky. You know that feeling — you see "propensity" for the fourth time and think "wait, I looked this up before, didn't I?"
+VocaBlock is a personal vocabulary learning tool I built after spending way too long looking up the same word for the fifth time while reading *Crime and Punishment* by Fyodor Dostoevsky.
 
 The idea is simple: every time you encounter a difficult word while reading, you jot it down in an Obsidian note. VocaBlock then takes over from there — it quietly picks a few words each day, catches you at random moments with fullscreen popups, and quizzes you on the ones you've already learned. Over time, the hard words stop being hard.
 
-This is a one-person hobby project. It's not polished, it's not a startup, it's just me and my ever-growing list of words I can't pronounce from 19th century Russian novels.
 
 ## How It Works
 
@@ -126,13 +125,13 @@ vocablock/
 - **uv** — install with `curl -LsSf https://astral.sh/uv/install.sh | sh`
 - **GTK3 system packages** — `python3-gi` and `gir1.2-gtk-3.0`
 - **PAM development** — `python3-pam` (if you ever want to add a PAM unlock gate)
-- **Gemini API key** — sign up at https://aistudio.google.com/apikey (note: the current code uses Groq, not Gemini — the README originally planned Gemini but I went with Groq because it was cheaper and faster)
+- **Gemini API key** — sign up at https://aistudio.google.com/apikey (note: the current code uses Groq, not Gemini)
 
 ## Installation & Setup
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/yourusername/vocablock.git
+git clone https://github.com/MadihaFarman/VocabLock.git
 cd vocablock
 
 # 2. Install system dependencies (Ubuntu/Debian)
@@ -145,7 +144,7 @@ source .venv/bin/activate
 # 4. Install Python packages
 uv pip install requests python-dotenv watchdog
 
-# 5. Create .env file with your Groq API key
+# 5. Create .env file with your Groq API key (or Gemini API key)
 #    Sign up at https://console.groq.com/ to get a free API key
 echo 'GROQ_API_KEY="your-key-here"' > .env
 
@@ -242,8 +241,8 @@ The database has 6 tables:
 
 ## Roadmap
 
-- **Android app** — the plan is to eventually build a companion Android app so you can do word popups and quizzes on your phone too. The daily session would sync from the same SQLite database. No ETA, but it's on the list.
+- **Android app** — the plan is to eventually build a companion Android app so I can do word popups and quizzes on my phone too. The daily session would sync from the same SQLite database. No ETA, but it's on the list.
 
 ## Acknowledgements
 
-Fyodor Dostoevsky, for writing a book so dense with difficult vocabulary that it made me build an entire vocabulary learning system just to survive reading it. "Propensity." "Penchant." "Penurious." "Perspicacity." I looked up at least 30 words in the first 100 pages alone. If you want to see what this project started from, check out `data/Crime_Punishment.md` — it's a real Obsidian note I kept while reading, complete with empty sections I never filled in.
+Fyodor Dostoevsky, for writing a book so dense that it made me build an entire vocabulary learning system just to survive reading it.If you want to see what this project started from, check out `data/Crime_Punishment.md` — it's a real Obsidian note I kept while reading.
