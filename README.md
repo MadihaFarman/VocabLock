@@ -73,10 +73,10 @@ The system autostarts via a GNOME desktop entry file on login.
 
 ## In Action
 ### New Word Popup
-![New Word Popup](image.png)
+![New Word Popup](images/image.png)
 
 ### Quiz Popup
-![Quiz Popup](image-1.png)
+![Quiz Popup](images/image-1.png)
 
 
 ## Features

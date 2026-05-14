@@ -1,1 +1,7 @@
 .env
+data/vocab.db
+data/scheduler.log
+.venv/
+__pycache__/
+*.pyc
+*.log
