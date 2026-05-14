@@ -71,6 +71,14 @@ Every morning, VocaBlock sets up a schedule of 10 events throughout the day — 
 
 The system autostarts via a GNOME desktop entry file on login.
 
+## In Action
+### New Word Popup
+![New Word Popup](image.png)
+
+### Quiz Popup
+![Quiz Popup](image-1.png)
+
+
 ## Features
 
 - **Automatic word sync** — save words in Obsidian markdown table format, and the watcher picks them up instantly
@@ -246,3 +254,4 @@ The database has 6 tables:
 ## Acknowledgements
 
 Fyodor Dostoevsky, for writing a book so dense that it made me build an entire vocabulary learning system just to survive reading it.If you want to see what this project started from, check out `data/Crime_Punishment.md` — it's a real Obsidian note I kept while reading.
+
